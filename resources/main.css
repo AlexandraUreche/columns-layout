@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.page-wrapper, footer{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.page-wrapper{
+    height: 1000px;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+   
+}
+
+.page-wrapper,.right-wrapper .prizes-wrapper, footer{
+    display: flex;
+}
+.left-wrapper, .middle-wrapper, .right-wrapper{
+    height: 100%;
+    width: 320px;
+}
+
+.left-wrapper, .middle-wrapper{
+    margin-right: 20px;
+}
+
+.left-wrapper .image-wrapper{
+    height: 65%;
+}
+
+.middle-wrapper .image-wrapper{
+    height: 50%;
+}
+.right-wrapper .image-wrapper{
+    height: 35%;
+}
+
+.middle-wrapper .content-wrapper, 
+.right-wrapper .content-wrapper .prizes-wrapper
+{
+    width: 200px;
+}
+
+.image-wrapper{
+    background-image: url(../assets/bg.jpg);
+    background-size: revert;
+}
+
+.left-wrapper .image-wrapper{
+    background-position: left;
+}
+
+.middle-wrapper .image-wrapper{
+    background-position: center;
+}
+
+.right-wrapper .image-wrapper{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+  
+}
+
+.top-left-corner, .right-wrapper .logo-title{
+    height: 150px;
+    width: 80px;
+    display: flex;
+}
+
+.top-left-corner{
+    height: 150px;
+    width: 50px;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.image-corner{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 80px;
+    background-image: url(../assets/logo-lima-design-network.png);
+    background-position: -30px center;
+    background-size: cover;
+}
+
+.top-left-corner .logo-title, .prizes-wrapper,
+.judges-wrapper div span, .schedule-wrapper div span, .info-wrapper div{
+    font-weight: 500;
+}
+
+.top-left-corner .logo-title
+{
+    padding-bottom: 40px;
+}
+
+.right-wrapper .logo-title{
+    width: 90px;
+    padding-right: 5px;
+    font-weight: 300;
+    text-align: end;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.middle-wrapper .subtitles h2:first-child,
+.right-wrapper .subtitles h2:first-child{
+    font-size: 30px; 
+}
+
+.right-wrapper .logo-title span:first-child,h2,
+.right-wrapper .info-wrapper .subtitles h2{
+    font-size: 18px;
+}
+
+.right-wrapper .logo-title span:nth-child(2){
+    font-size: 15px;
+}
+
+.right-wrapper .logo-title span:nth-child(3)
+{
+    font-size: 12px;
+}
+
+h1,h2,.top-left-corner, .right-wrapper .logo-title,
+.judges-wrapper div span:nth-child(2){
+    text-transform: uppercase;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+.middle-wrapper h2, .right-wrapper h2{
+    margin-bottom: 5px;
+}
+
+.left-wrapper .main-title, .middle-wrapper .subtitles,
+.right-wrapper .subtitles{
+    margin-top: 15px;
+} 
+
+h1{
+   
+    width: 45px;
+    font-size: 55px;
+}
+
+.left-wrapper .subtitles h2:nth-child(2){
+    width: 25px;
+}
+
+.left-wrapper .subtitles h2:nth-child(2), 
+.middle-wrapper .subtitles h2:first-child,
+.right-wrapper .subtitles h2:first-child{
+    color:#e7a06c;
+   
+}
+
+.right-wrapper .prizes-wrapper{
+    justify-content: space-between;
+}
+
+
+.prizes-wrapper div:last-child, .top-places-amounts,
+.judges-wrapper div span:nth-child(2),
+.schedule-wrapper div span:nth-child(2),
+.info-wrapper div:nth-child(2){
+    color: #747273;
+
+}
+
+.prizes-wrapper, .judges-wrapper, .schedule-wrapper{
+    margin-bottom: 20px;
+}
+
+.schedule-wrapper div:nth-child(3n), .schedule-wrapper div:nth-child(5n){
+    margin-bottom: 10px;
+}
+
+.info-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    height: 50px;
+}
+
+.footer-image-wrapper{
+    height: 100%;
+    width: 15%;
+} 
+
+.footer-image-wrapper img{
+    height: 100%;
+    width: auto;
+}
