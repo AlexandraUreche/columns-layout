@@ -9,12 +9,14 @@ html,body{
     
 }
 
+/* era ok ca .page-wrapper sa contina si footer, la urma urmei asta e si rolul lui, sa seteze un canvas, nu are sens sa o faci separat */
 .page-wrapper, footer{
     width: 960px;
     margin: 0 auto;
 }
 
 .page-wrapper{
+    /* nu ne dorim sa fixam height-ul asa, in foarte multe cazuri e ok sa ne bazam pe continutul in sine sa stabileasca height-ul. */
     height: 1000px;
     padding-top: 50px;
     font-family: 'Roboto', sans-serif;
